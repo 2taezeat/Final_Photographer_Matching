@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">final_photographer_matching</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_search">Search</string>
+    <string name="title_my_page">MyPage</string>
+
+
+</resources>
