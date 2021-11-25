@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/navigation_search"
-        android:name="com.example.final_photographer_matching.view.fragment.MyPageFragment"
+        android:name="com.example.final_photographer_matching.view.fragment.SearchFragment"
         android:label="@string/title_search"
         tools:layout="@layout/fragment_search" />
 

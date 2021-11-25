@@ -1,4 +1,4 @@
-package com.example.final_photographer_matching.ui.home
+package com.example.final_photographer_matching.viewmodels
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

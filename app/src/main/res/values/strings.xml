@@ -5,6 +5,10 @@
     <string name="title_notifications">Notifications</string>
     <string name="title_search">Search</string>
     <string name="title_my_page">MyPage</string>
+    <string name="identification_picture">증명사진</string>
+    <string name="profile">프로필</string>
+    <string name="body_profile">바디프로필</string>
+    <string name="snapshot">스냅</string>
 
 
 </resources>
