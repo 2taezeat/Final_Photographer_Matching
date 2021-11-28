@@ -9,6 +9,17 @@
     <string name="profile">프로필</string>
     <string name="body_profile">바디프로필</string>
     <string name="snapshot">스냅</string>
+    <string name="reversation">예약 내역</string>
+    <string name="notice">공지사항</string>
+    <string name="event">이벤트</string>
+    <string name="recommend">추천 작가, 스튜디오</string>
+    <string name="faq">FAQ</string>
+    <string name="register">스튜디오 입점 및 작가 등록 문의</string>
+    <string name="nickname">닉네임</string>
+    <string name="point">포인트</string>
+    <string name="new_photographer">신규 작가, 스튜디오</string>
+    <string name="photo_kind">사진 종류별 둘러보기</string>
+    <string name="whole">전체보기</string>
 
 
 </resources>

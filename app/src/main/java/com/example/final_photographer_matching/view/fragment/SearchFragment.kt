@@ -4,6 +4,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.webkit.WebSettings
+import android.webkit.WebViewClient
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
@@ -15,6 +17,8 @@ class SearchFragment : Fragment() {
 
     private lateinit var searchViewModel: SearchViewModel
     private var _binding: FragmentSearchBinding? = null
+    private val searchURL = "https://sites.google.com/view/mateprivacyterms"
+
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -35,6 +39,17 @@ class SearchFragment : Fragment() {
 //        searchViewModel.text.observe(viewLifecycleOwner, Observer {
 //            textView.text = it
 //        })
+
+        binding.searchWebView.apply {
+            webViewClient = WebViewClient()
+            settings.builtInZoomControls = true
+            settings.javaScriptEnabled = true
+            settings.cacheMode = WebSettings.LOAD_DEFAULT
+        }
+
+        binding.searchWebView.loadUrl(searchURL)
+
+
         return root
     }
 
