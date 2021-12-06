@@ -85,7 +85,7 @@ xmlns:app="http://schemas.android.com/apk/res-auto">
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="mynickname"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="10dp"
                 android:fontFamily="@font/dohyeon_regular"
                 app:layout_constraintStart_toStartOf="@+id/mypage_nickname"
                 app:layout_constraintTop_toBottomOf="@+id/mypage_nickname"
@@ -125,12 +125,29 @@ xmlns:app="http://schemas.android.com/apk/res-auto">
                 >
             </TextView>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3000p"
+                android:textColor="@color/black"
+                android:fontFamily="@font/dohyeon_regular"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                android:layout_marginTop="50dp"
+                >
+
+            </TextView>
+
+
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/point"
+                android:text="@string/my_picture_look"
                 android:textColor="@color/main_color"
                 android:fontFamily="@font/dohyeon_regular"
                 android:textSize="18sp"
@@ -147,7 +164,7 @@ xmlns:app="http://schemas.android.com/apk/res-auto">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/point"
+                android:text="@string/scrap"
                 android:textColor="@color/main_color"
                 android:fontFamily="@font/dohyeon_regular"
                 android:textSize="18sp"
@@ -160,6 +177,52 @@ xmlns:app="http://schemas.android.com/apk/res-auto">
             </TextView>
 
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textColor="@color/black"
+                android:fontFamily="@font/dohyeon_regular"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_bias="0.88"
+                android:layout_marginTop="50dp"
+                >
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_star_24"
+                app:tint="@color/main_color"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_bias="0.83"
+                android:layout_marginTop="45dp"
+                >
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_image_search_24"
+                app:tint="@color/main_color"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                android:layout_marginTop="45dp"
+                >
+
+            </ImageView>
+
+
+
             <View
                 android:layout_width="2dp"
                 android:layout_height="60dp"
@@ -168,7 +231,7 @@ xmlns:app="http://schemas.android.com/apk/res-auto">
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintHorizontal_bias="0.32"
+                app:layout_constraintHorizontal_bias="0.3"
                 >
             </View>
 
@@ -180,7 +243,7 @@ xmlns:app="http://schemas.android.com/apk/res-auto">
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintHorizontal_bias="0.69"
+                app:layout_constraintHorizontal_bias="0.70"
                 >
             </View>
 
@@ -415,6 +478,38 @@ xmlns:app="http://schemas.android.com/apk/res-auto">
                 >
             </ImageView>
 
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/mypage_profile_cl4"
+            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintWidth_percent="0.9"
+            app:layout_constraintTop_toBottomOf="@+id/mypage_profile_cl3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="@font/dohyeon_regular"
+                android:text="@string/profile_register"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                >
+
+            </Button>
 
 
 

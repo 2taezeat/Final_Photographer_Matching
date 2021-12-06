@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.example.final_photographer_matching.R
 import com.example.final_photographer_matching.databinding.FragmentMypageBinding
 import com.example.final_photographer_matching.viewmodels.MyPageViewModel
 
@@ -36,6 +37,11 @@ class MyPageFragment : Fragment() {
 //        notificationsViewModel.text.observe(viewLifecycleOwner, Observer {
 //            textView.text = it
 //        })
+
+
+        binding.mypageToolbar.inflateMenu(R.menu.mypage_toolbar_menu)
+
+
         return root
     }
 

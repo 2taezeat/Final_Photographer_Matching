@@ -17,7 +17,7 @@ class SearchFragment : Fragment() {
 
     private lateinit var searchViewModel: SearchViewModel
     private var _binding: FragmentSearchBinding? = null
-    private val searchURL = "https://sites.google.com/view/mateprivacyterms"
+    private val searchURL = "https://photographer-matching.web.app/search"
 
 
     // This property is only valid between onCreateView and
