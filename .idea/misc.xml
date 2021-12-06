@@ -12,9 +12,12 @@
         <entry key="app/src/main/res/drawable/ic_baseline_star_24.xml" value="0.25263157894736843" />
         <entry key="app/src/main/res/font/font.xml" value="0.3314814814814815" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_edit_profile.xml" value="0.23771929824561402" />
+        <entry key="app/src/main/res/layout/fragment_edit_profile2.xml" value="0.23771929824561402" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/fragment_mypage.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_mypage.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.1598731884057971" />
+        <entry key="app/src/main/res/layout/fragment_refrigerator_bottom_dialog.xml" value="0.23771929824561402" />
         <entry key="app/src/main/res/layout/fragment_search.xml" value="0.165" />
         <entry key="app/src/main/res/layout/home_cardview.xml" value="0.45" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.2015625" />

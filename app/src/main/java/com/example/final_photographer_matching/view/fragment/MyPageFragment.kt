@@ -6,10 +6,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.final_photographer_matching.R
 import com.example.final_photographer_matching.databinding.FragmentMypageBinding
+import com.example.final_photographer_matching.utils.BottomDialogShow
+import com.example.final_photographer_matching.utils.FragmentShowHide
 import com.example.final_photographer_matching.viewmodels.MyPageViewModel
 
 
@@ -18,9 +21,11 @@ class MyPageFragment : Fragment() {
     private lateinit var notificationsViewModel: MyPageViewModel
     private var _binding: FragmentMypageBinding? = null
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
+
     private val binding get() = _binding!!
+    private val lazyActivity by lazy {
+        requireActivity()
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -30,16 +35,17 @@ class MyPageFragment : Fragment() {
         notificationsViewModel =
             ViewModelProvider(this).get(MyPageViewModel::class.java)
 
+
         _binding = FragmentMypageBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-//        val textView: TextView = binding.textNotifications
-//        notificationsViewModel.text.observe(viewLifecycleOwner, Observer {
-//            textView.text = it
-//        })
-
-
         binding.mypageToolbar.inflateMenu(R.menu.mypage_toolbar_menu)
+
+
+        binding.profileRegisterButton.setOnClickListener{
+            val fragmentManager: FragmentManager = lazyActivity.supportFragmentManager
+            BottomDialogShow.refrigeratorBottomDialogFragmentShow(fragmentManager)
+        }
 
 
         return root
@@ -49,4 +55,7 @@ class MyPageFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
+
+
+
 }

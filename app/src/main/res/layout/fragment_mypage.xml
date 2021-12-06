@@ -509,6 +509,7 @@ xmlns:app="http://schemas.android.com/apk/res-auto">
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:id="@+id/profile_register_button"
                 android:fontFamily="@font/dohyeon_regular"
                 android:text="@string/profile_register"
                 android:textSize="18sp"
