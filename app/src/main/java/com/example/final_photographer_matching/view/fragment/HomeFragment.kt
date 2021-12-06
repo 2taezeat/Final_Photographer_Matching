@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.ebookfrenzy.carddemo.HomeRecommendAdapter
 import com.example.final_photographer_matching.databinding.FragmentHomeBinding
 import com.example.final_photographer_matching.viewmodels.HomeViewModel
 
@@ -17,6 +19,9 @@ class HomeFragment : Fragment() {
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
+    private val lazyActivity by lazy {
+        requireActivity()
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -34,6 +39,19 @@ class HomeFragment : Fragment() {
 //            textView.text = it
 //        })
 
+
+        val homeRecommendRecyclerview = binding.homeRv2
+        //homeRecommendRecyclerview.layoutManager = LinearLayoutManager(lazyActivity)
+        //homeRecommendRecyclerview.adapter = HomeRecommendAdapter()
+
+        homeRecommendRecyclerview.also {
+            it.layoutManager = object : LinearLayoutManager(lazyActivity, HORIZONTAL, false){
+                override fun canScrollVertically(): Boolean {
+                    return false
+                }
+            }
+            it.adapter = HomeRecommendAdapter()
+        }
 
         return root
     }

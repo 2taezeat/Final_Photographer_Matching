@@ -21,8 +21,10 @@
     <string name="photo_kind">사진 종류별 둘러보기</string>
     <string name="whole">전체보기</string>
     <string name="scrap">스크랩</string>
-    <string name="profile_register">프로필 관리하기</string>
+    <string name="profile_register">포토폴리오 관리하기</string>
     <string name="my_picture_look">내 사진 모아보기</string>
+    <string name="location_sample_1">서울 마포구</string>
+    <string name="hash_tag">해쉬 태그</string>
 
 
 </resources>
