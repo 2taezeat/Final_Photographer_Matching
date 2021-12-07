@@ -25,6 +25,8 @@
     <string name="my_picture_look">내 사진 모아보기</string>
     <string name="location_sample_1">서울 마포구</string>
     <string name="hash_tag">해쉬 태그</string>
+    <string name="location">활동 장소, 지역</string>
+    <string name="price">가격</string>
 
 
 </resources>
