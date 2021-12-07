@@ -7,7 +7,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.ebookfrenzy.carddemo.HomeNewAdapter
 import com.ebookfrenzy.carddemo.HomeRecommendAdapter
+import com.example.final_photographer_matching.R
 import com.example.final_photographer_matching.databinding.FragmentHomeBinding
 import com.example.final_photographer_matching.viewmodels.HomeViewModel
 
@@ -40,11 +42,12 @@ class HomeFragment : Fragment() {
 //        })
 
 
-        val homeRecommendRecyclerview = binding.homeRv2
-        //homeRecommendRecyclerview.layoutManager = LinearLayoutManager(lazyActivity)
-        //homeRecommendRecyclerview.adapter = HomeRecommendAdapter()
+        val homeRecommendRecyclerView = binding.homeRv2
+        val homeKindRecyclerView = binding.homeRv3
+        val homeNewRecyclerView = binding.homeRv4
 
-        homeRecommendRecyclerview.also {
+
+        homeRecommendRecyclerView.also {
             it.layoutManager = object : LinearLayoutManager(lazyActivity, HORIZONTAL, false){
                 override fun canScrollVertically(): Boolean {
                     return false
@@ -52,6 +55,26 @@ class HomeFragment : Fragment() {
             }
             it.adapter = HomeRecommendAdapter()
         }
+
+        homeKindRecyclerView.also {
+            it.layoutManager = object : LinearLayoutManager(lazyActivity, HORIZONTAL, false){
+                override fun canScrollVertically(): Boolean {
+                    return false
+                }
+            }
+            it.adapter = HomeNewAdapter()
+        }
+
+        homeNewRecyclerView.also {
+            it.layoutManager = object : LinearLayoutManager(lazyActivity, HORIZONTAL, false){
+                override fun canScrollVertically(): Boolean {
+                    return false
+                }
+            }
+            it.adapter = HomeNewAdapter()
+        }
+
+        binding.homeToolbar.inflateMenu(R.menu.home_toolbar_menu)
 
         return root
     }

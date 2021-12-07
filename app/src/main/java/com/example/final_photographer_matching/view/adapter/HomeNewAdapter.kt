@@ -5,11 +5,12 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.final_photographer_matching.R
+import com.example.final_photographer_matching.databinding.HomeNewCardviewBinding
 import com.example.final_photographer_matching.databinding.HomeRecommendCardviewBinding
 
-class HomeRecommendAdapter() : RecyclerView.Adapter<HomeRecommendAdapter.CustomViewHolder>() {
-    inner class CustomViewHolder(val homeRecommendCardviewBinding: HomeRecommendCardviewBinding)
-        : RecyclerView.ViewHolder(homeRecommendCardviewBinding.root)
+class HomeNewAdapter() : RecyclerView.Adapter<HomeNewAdapter.CustomViewHolder>() {
+    inner class CustomViewHolder(val homeNewCardviewBinding: HomeNewCardviewBinding)
+        : RecyclerView.ViewHolder(homeNewCardviewBinding.root)
 
     private val titles = arrayOf("Chapter One",
         "Chapter Two", "Chapter Three", "Chapter Four",
@@ -23,10 +24,10 @@ class HomeRecommendAdapter() : RecyclerView.Adapter<HomeRecommendAdapter.CustomV
 
     private val images = intArrayOf(1,2,3,4,5,6,7,8)
 
-    override fun onCreateViewHolder(viewGroup: ViewGroup, i: Int): HomeRecommendAdapter.CustomViewHolder {
-        val bind = DataBindingUtil.inflate<HomeRecommendCardviewBinding>(
+    override fun onCreateViewHolder(viewGroup: ViewGroup, i: Int): HomeNewAdapter.CustomViewHolder {
+        val bind = DataBindingUtil.inflate<HomeNewCardviewBinding>(
             LayoutInflater.from(viewGroup.context),
-            R.layout.home_recommend_cardview,
+            R.layout.home_new_cardview,
             viewGroup,
             false
         )

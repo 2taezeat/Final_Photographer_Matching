@@ -21,7 +21,11 @@
         <entry key="app/src/main/res/layout/fragment_refrigerator_bottom_dialog.xml" value="0.23771929824561402" />
         <entry key="app/src/main/res/layout/fragment_search.xml" value="0.165" />
         <entry key="app/src/main/res/layout/home_cardview.xml" value="0.45" />
+        <entry key="app/src/main/res/layout/home_kind_cardview.xml" value="0.225" />
+        <entry key="app/src/main/res/layout/home_new_cardview.xml" value="0.225" />
+        <entry key="app/src/main/res/layout/home_recommend_cardview.xml" value="0.30350877192982456" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.2015625" />
+        <entry key="app/src/main/res/menu/home_toolbar_menu.xml" value="0.225" />
         <entry key="app/src/main/res/menu/mypage_toolbar_menu.xml" value="0.23903508771929824" />
       </map>
     </option>

@@ -13,7 +13,9 @@
     <color name="grey_ef">#EFEFEF</color>
     <color name="purple_100">#F7F0FF</color>
     <color name="main_color">#2E3C7E</color>
+    <color name="main_color_black">#131933</color>
     <color name="pink">#FBEAEB</color>
+    <color name="white_pink">#FFF5F5</color>
 
 
 
