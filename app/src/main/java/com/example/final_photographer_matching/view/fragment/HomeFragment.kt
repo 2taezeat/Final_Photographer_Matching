@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.ebookfrenzy.carddemo.HomeKindAdapter
 import com.ebookfrenzy.carddemo.HomeNewAdapter
 import com.ebookfrenzy.carddemo.HomeRecommendAdapter
 import com.example.final_photographer_matching.R
@@ -62,7 +63,7 @@ class HomeFragment : Fragment() {
                     return false
                 }
             }
-            it.adapter = HomeNewAdapter()
+            it.adapter = HomeKindAdapter()
         }
 
         homeNewRecyclerView.also {

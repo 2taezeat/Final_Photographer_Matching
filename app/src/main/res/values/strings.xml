@@ -27,6 +27,9 @@
     <string name="hash_tag">해쉬 태그</string>
     <string name="location">활동 장소, 지역</string>
     <string name="price">가격</string>
+    <string name="save">저장하기</string>
+    <string name="review">리뷰</string>
+    <string name="chatting">채팅하기</string>
 
 
 </resources>
