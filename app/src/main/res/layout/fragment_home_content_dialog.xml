@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_ef"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/profile_edit_scrollview"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.9"
+            android:layout_height="400dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="30dp"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="2dp"
+                app:cardCornerRadius="20dp"
+                android:elevation="8dp"
+                >
+
+                <ImageView
+                    android:id="@+id/home_card_imageview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/teal_200"
+                    />
+
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/ic_baseline_image_24"
+                    app:tint="@color/main_color"
+                    >
+
+                </ImageView>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="440dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="440dp"
+            android:background="@color/grey"
+            android:elevation="4dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nickname"
+                android:fontFamily="@font/nanumgothic_bold"
+                android:textSize="18sp"
+                android:textColor="@color/main_color"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                >
+            </TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location"
+                android:fontFamily="@font/nanumgothic_bold"
+                android:textSize="18sp"
+                android:textColor="@color/main_color"
+                android:layout_marginTop="80dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                >
+            </TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/photo_category"
+                android:fontFamily="@font/nanumgothic_bold"
+                android:textSize="18sp"
+                android:textColor="@color/main_color"
+                android:layout_marginTop="140dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                >
+            </TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price"
+                android:fontFamily="@font/nanumgothic_bold"
+                android:textSize="18sp"
+                android:textColor="@color/main_color"
+                android:layout_marginTop="200dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                >
+            </TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SNS"
+                android:fontFamily="@font/nanumgothic_bold"
+                android:textSize="18sp"
+                android:textColor="@color/main_color"
+                android:layout_marginTop="260dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hash_tag"
+                android:fontFamily="@font/nanumgothic_bold"
+                android:textSize="18sp"
+                android:textColor="@color/main_color"
+                android:layout_marginTop="320dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                >
+            </TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/time"
+                android:fontFamily="@font/nanumgothic_bold"
+                android:textSize="18sp"
+                android:textColor="@color/main_color"
+                android:layout_marginTop="380dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/home_dialog_nickname_text"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="34dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/body_profile"
+                android:fontFamily="@font/dohyeon_regular"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="45dp"
+                >
+            </TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/home_dialog_location_text"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="34dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="서울시 안암구"
+                android:fontFamily="@font/dohyeon_regular"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="105dp"
+                >
+            </TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/home_dialog_kind_text"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="34dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/body_profile"
+                android:fontFamily="@font/dohyeon_regular"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="165dp"
+                >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/home_dialog_price_text"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="34dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="60,000"
+                android:fontFamily="@font/dohyeon_regular"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="225dp"
+                >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/home_dialog_sns_text"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="34dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="'@myinstaID'"
+                android:fontFamily="@font/dohyeon_regular"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="285dp"
+                >
+            </TextView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:contentPadding="2dp"
+                android:backgroundTint="@color/pink"
+                android:foreground="?selectableItemBackground"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="34dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="345dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#단아한"
+                    android:textColor="@color/main_color"
+                    android:textSize="20sp"
+                    android:id="@+id/home_dialog_hashtag_1_text"
+                    android:fontFamily="@font/dohyeon_regular"
+                    >
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:contentPadding="2dp"
+                android:backgroundTint="@color/pink"
+                android:foreground="?selectableItemBackground"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="110dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="345dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#단아한"
+                    android:textColor="@color/main_color"
+                    android:textSize="20sp"
+                    android:id="@+id/home_dialog_hashtag_2_text"
+                    android:fontFamily="@font/dohyeon_regular"
+                    >
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:contentPadding="2dp"
+                android:backgroundTint="@color/pink"
+                android:foreground="?selectableItemBackground"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="186dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="345dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#단아한"
+                    android:textColor="@color/main_color"
+                    android:textSize="20sp"
+                    android:id="@+id/home_dialog_hashtag_3_text"
+                    android:fontFamily="@font/dohyeon_regular"
+                    >
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/home_dialog_time_text"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="34dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="14:00 ~ 16:00, 18:00 ~ 20:00"
+                android:fontFamily="@font/dohyeon_regular"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="405dp"
+                >
+            </TextView>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="4.5"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="16dp"
+                >
+            </TextView>
+
+
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_baseline_star_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="18dp"
+                app:tint="#FFEB3B"
+                >
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_baseline_favorite_border_24"
+                app:tint="@color/main_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="20dp"
+                >
+            </ImageView>
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_baseline_share_24"
+                app:tint="@color/main_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                >
+            </ImageView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="890dp"
+            android:background="@color/grey"
+            android:elevation="4dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="소개"
+                android:fontFamily="@font/nanumgothic_bold"
+                android:textSize="18sp"
+                android:textColor="@color/main_color"
+                android:layout_margin="20dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                >
+            </TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintWidth_percent="0.9"
+                app:layout_constraintHeight_percent="0.72"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:fontFamily="@font/dohyeon_regular"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:id="@+id/home_dialog_introduce_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.8"
+                android:text="asdasdasd"
+                android:padding="10dp"
+                >
+            </TextView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="1100dp"
+            android:background="@color/grey"
+            android:elevation="4dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/review"
+                android:fontFamily="@font/nanumgothic_bold"
+                android:textSize="18sp"
+                android:textColor="@color/main_color"
+                android:layout_margin="20dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                >
+            </TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/grey_d5"
+                >
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="1270dp"
+            android:background="@color/grey"
+            android:elevation="4dp"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="안내 사항"
+                android:fontFamily="@font/nanumgothic_bold"
+                android:textSize="18sp"
+                android:textColor="@color/main_color"
+                android:layout_margin="20dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                >
+            </TextView>
+
+
+            <Button
+                android:layout_width="360dp"
+                android:layout_height="50dp"
+                android:text="@string/chatting"
+                android:textSize="20sp"
+                android:fontFamily="@font/nanumgothic_bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/main_color"
+                android:textColor="@color/white"
+
+                >
+
+            </Button>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintWidth_percent="0.9"
+                app:layout_constraintHeight_percent="0.69"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.3"
+                android:id="@+id/home_dialog_notice_text"
+                android:text="asdasdasd"
+                android:padding="10dp"
+                android:fontFamily="@font/dohyeon_regular"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                >
+            </TextView>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

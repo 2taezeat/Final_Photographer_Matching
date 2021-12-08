@@ -21,7 +21,7 @@
 
 
     <font android:fontStyle="normal"
-        android:fontWeight="700"
+        android:fontWeight="400"
         android:font="@font/notosanskr_bold"/>
 
 

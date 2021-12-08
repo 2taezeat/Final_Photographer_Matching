@@ -210,8 +210,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="사진 종류"
-                android:fontFamily="@font/notosanskr_regular"                android:textColor="@color/main_color"
+                android:text="@string/photo_category"
+                android:fontFamily="@font/nanumgothic_bold"
+                android:textColor="@color/main_color"
                 android:textSize="14sp"
                 android:textStyle="bold"
                 app:layout_constraintTop_toTopOf="parent"
@@ -232,13 +233,14 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintVertical_bias="0.15"
                 android:layout_marginStart="14dp"
+
                 >
 
                 <!-- Chips can be declared here, or added dynamically. -->
                 <com.google.android.material.chip.Chip
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/dohyeon_regular"
+                    android:textAppearance="@style/chipText"
                     style="@style/Widget.MaterialComponents.Chip.Choice"
                     android:text="@string/identification_picture"
                     >
@@ -248,7 +250,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/profile"
-                    android:fontFamily="@font/dohyeon_regular"
+                    android:textAppearance="@style/chipText"
                     style="@style/Widget.MaterialComponents.Chip.Choice"
                     >
 
@@ -259,7 +261,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/body_profile"
-                    android:fontFamily="@font/dohyeon_regular"
+                    android:textAppearance="@style/chipText"
                     style="@style/Widget.MaterialComponents.Chip.Choice"
                     >
 
@@ -269,7 +271,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/snapshot"
-                    android:fontFamily="@font/dohyeon_regular"
+                    android:textAppearance="@style/chipText"
                     style="@style/Widget.MaterialComponents.Chip.Choice"
                     >
 
@@ -349,7 +351,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/hash_tag"
-                android:fontFamily="@font/notosanskr_regular"                android:textColor="@color/main_color"
+                android:fontFamily="@font/nanumgothic_bold"                android:textColor="@color/main_color"
                 android:textSize="14sp"
                 android:textStyle="bold"
                 app:layout_constraintTop_toTopOf="parent"
@@ -492,7 +494,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintVertical_bias="0.05"
                 android:layout_marginStart="10dp"
-                android:hint="촬영 가능 시간"
+                android:hint="@string/time"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -564,14 +566,14 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 android:layout_marginBottom="14dp"
                 android:text="@string/save"
-                android:textSize="14sp"
+                android:textSize="18sp"
                 android:gravity="center"
                 android:textColor="@color/white"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:backgroundTint="@color/main_color"
                 android:textStyle="bold"
-                android:fontFamily="@font/notosanskr_regular"
+                android:fontFamily="@font/nanumgothic_regular"
                 >
 
 

@@ -30,6 +30,8 @@
     <string name="save">저장하기</string>
     <string name="review">리뷰</string>
     <string name="chatting">채팅하기</string>
+    <string name="photo_category">사진 종류</string>
+    <string name="time">촬영 가능 시간</string>
 
 
 </resources>
