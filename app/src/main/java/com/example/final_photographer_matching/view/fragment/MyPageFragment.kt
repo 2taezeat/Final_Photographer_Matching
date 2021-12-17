@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import com.example.final_photographer_matching.R
 import com.example.final_photographer_matching.databinding.FragmentMypageBinding
 import com.example.final_photographer_matching.utils.BottomDialogShow
@@ -44,10 +45,22 @@ class MyPageFragment : Fragment() {
 
         binding.profileRegisterButton.setOnClickListener{
             val fragmentManager: FragmentManager = lazyActivity.supportFragmentManager
-            //BottomDialogShow.profileEditDialogFragmentShow(fragmentManager)
-            BottomDialogShow.homeContentDialogFragmentShow(fragmentManager)
-
+            BottomDialogShow.profileEditDialogFragmentShow(fragmentManager)
         }
+
+
+        binding.mypageToolbar.setOnMenuItemClickListener {
+            when (it.itemId) {
+                R.id.mypage_notification -> {
+                    val navController = findNavController()
+                    navController.navigate(R.id.navigation_notification)
+                    true
+                }
+
+                else -> false
+            }
+        }
+
 
 
         return root

@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.ebookfrenzy.carddemo.HomeKindAdapter
@@ -12,6 +13,8 @@ import com.ebookfrenzy.carddemo.HomeNewAdapter
 import com.ebookfrenzy.carddemo.HomeRecommendAdapter
 import com.example.final_photographer_matching.R
 import com.example.final_photographer_matching.databinding.FragmentHomeBinding
+import com.example.final_photographer_matching.utils.BottomDialogShow
+import com.example.final_photographer_matching.view.activity.MainActivity
 import com.example.final_photographer_matching.viewmodels.HomeViewModel
 
 class HomeFragment : Fragment() {
@@ -25,6 +28,8 @@ class HomeFragment : Fragment() {
     private val lazyActivity by lazy {
         requireActivity()
     }
+
+    val tmp = HomeKindAdapter()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -47,6 +52,13 @@ class HomeFragment : Fragment() {
         val homeKindRecyclerView = binding.homeRv3
         val homeNewRecyclerView = binding.homeRv4
 
+        tmp.setItemClickListener(object: HomeKindAdapter.OnItemClickListener{
+            override fun onClick(v: View, position: Int) {
+                val fragmentManager: FragmentManager = lazyActivity.supportFragmentManager
+                BottomDialogShow.homeContentDialogFragmentShow(fragmentManager)
+            }
+        })
+
 
         homeRecommendRecyclerView.also {
             it.layoutManager = object : LinearLayoutManager(lazyActivity, HORIZONTAL, false){
@@ -63,7 +75,9 @@ class HomeFragment : Fragment() {
                     return false
                 }
             }
-            it.adapter = HomeKindAdapter()
+            it.adapter = tmp
+
+
         }
 
         homeNewRecyclerView.also {
@@ -76,6 +90,7 @@ class HomeFragment : Fragment() {
         }
 
         binding.homeToolbar.inflateMenu(R.menu.home_toolbar_menu)
+
 
         return root
     }
