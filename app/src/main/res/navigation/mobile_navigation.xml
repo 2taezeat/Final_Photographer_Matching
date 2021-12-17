@@ -31,4 +31,11 @@
         tools:layout="@layout/fragment_notification" />
 
 
+    <fragment
+        android:id="@+id/navigation_chat"
+        android:name="com.example.final_photographer_matching.view.fragment.ChatFragment"
+        android:label="Notification"
+        tools:layout="@layout/fragment_chat" />
+
+
 </navigation>

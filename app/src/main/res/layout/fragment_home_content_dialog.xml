@@ -185,7 +185,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 android:layout_marginStart="34dp"
                 app:layout_constraintStart_toStartOf="parent"
-                android:text="@string/body_profile"
+                android:text="호랑이 사진관"
                 android:fontFamily="@font/dohyeon_regular"
                 android:textSize="20sp"
                 android:textColor="@color/black"
@@ -436,11 +436,20 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 android:fontFamily="@font/dohyeon_regular"
                 android:textColor="@color/black"
-                android:textSize="16sp"
+                android:textSize="12sp"
                 android:id="@+id/home_dialog_introduce_text"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintVertical_bias="0.8"
-                android:text="asdasdasd"
+                android:text="안녕하세요 :) 사진을 취미로 하는 졸업생 교우입니다.야외 스냅 촬영을 서비스로 오픈하며
+교우분들의 잊지 못할 추억을 만들어드리고자 합니다.
+촬영 전 모델분과 충분한 대화를 한 뒤에
+원하시는 방향, 느낌에 맞춰서 사진 촬영을 진행하고 있습니다
+고파스를 통해 여러 교우님들의 사진을 찍어드리며 즐거움을 느꼈고,
+이런 취미활동을 진지하게 해보고자 서비스를 오픈하게 됐습니다.
+사진촬영이라는 것이 주관적인 분야라는 것을 잘 알고 있고,
+정답이 없는 분야에서 늘 겸손하게 배우는 자세로 활동하고 있습니다 .
+촬영 관련된 부분은
+언제든 편하게 연락주셔도 괜찮습니다!"
                 android:padding="10dp"
                 >
             </TextView>
@@ -680,11 +689,16 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintVertical_bias="0.3"
                 android:id="@+id/home_dialog_notice_text"
-                android:text="asdasdasd"
+                android:text="> 촬영 시간은 이동시간과 옷 갈아입는 시간이 포함되어 있습니다. 추가 촬영을 원하는 경우 예약시 문의주세요.(30분 단위 추가 가능)\n
+> 예약시간에 늦으실 경우에도 정해진 시간에 촬영이 종료됩니다. 늦지 않도록 촬영장소에 도착해주세요!\n
+> 우천시 (촬영 전 날 기준 확정시) 비가 많이 오지 않는 경우 그대로 진행하거나 스튜디오 촬영으로 변경(렌탈스튜디오) 하여 진행하며, 원하는 경우 (촬영 3일전 일기예보 비 확정 기준)일정 변경 가능하며, 상의 후 진행됩니다.\n
+> 헤어, 메이크업 제휴 (강동역, 이대역, 홍대입구, 인천)를 원하는 경우 카카오톡 채널로 문의주시면 안내도와드릴게요!\n
+> 스냅에 따라 오자매 소장 드레스 대여가 가능하니 예약시 문의주세요.\n
+> 사진 발송 후 사진은 30일 동안만 보관되며, 그 이후에는 삭제되니 다운받은 후 꼭 본인 웹하드에 옮겨주세요.(1차정리된 원본(jpg)과 보정본 데이터파일을 클라우드 링크를 통해 전송합니다.)"
                 android:padding="10dp"
                 android:fontFamily="@font/dohyeon_regular"
                 android:textColor="@color/black"
-                android:textSize="16sp"
+                android:textSize="13sp"
                 >
             </TextView>
 

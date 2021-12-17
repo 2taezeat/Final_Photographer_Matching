@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.ebookfrenzy.carddemo.HomeKindAdapter
 import com.ebookfrenzy.carddemo.HomeNewAdapter
@@ -46,6 +47,23 @@ class HomeFragment : Fragment() {
 //        homeViewModel.text.observe(viewLifecycleOwner, Observer {
 //            textView.text = it
 //        })
+
+        binding.homeToolbar.setOnMenuItemClickListener {
+            when (it.itemId) {
+                R.id.home_menu_notification -> {
+                    val navController = findNavController()
+                    navController.navigate(R.id.navigation_notification)
+                    true
+                }
+                R.id.home_menu_chat -> {
+                    val navController = findNavController()
+                    navController.navigate(R.id.navigation_chat)
+                    true
+                }
+
+                else -> false
+            }
+        }
 
 
         val homeRecommendRecyclerView = binding.homeRv2
