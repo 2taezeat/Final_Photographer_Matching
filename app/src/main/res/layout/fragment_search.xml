@@ -71,7 +71,6 @@
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="50dp"
             android:id="@+id/webview_cl"
-            android:background="@color/black"
             >
 
         </androidx.constraintlayout.widget.ConstraintLayout>

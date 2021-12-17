@@ -638,7 +638,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="400dp"
+            android:layout_height="460dp"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="1270dp"
             android:background="@color/grey"
@@ -672,9 +672,22 @@
                 android:layout_marginBottom="10dp"
                 android:backgroundTint="@color/main_color"
                 android:textColor="@color/white"
-
                 >
+            </Button>
 
+            <Button
+                android:layout_width="360dp"
+                android:layout_height="50dp"
+                android:text="예약 및 결제하기"
+                android:textSize="20sp"
+                android:fontFamily="@font/nanumgothic_bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="65dp"
+                android:backgroundTint="@color/main_color"
+                android:textColor="@color/white"
+                >
             </Button>
 
 
