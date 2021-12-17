@@ -24,6 +24,10 @@ class HomeNewAdapter() : RecyclerView.Adapter<HomeNewAdapter.CustomViewHolder>()
 
     private val images = intArrayOf(1,2,3,4,5,6,7,8)
 
+
+
+
+
     override fun onCreateViewHolder(viewGroup: ViewGroup, i: Int): HomeNewAdapter.CustomViewHolder {
         val bind = DataBindingUtil.inflate<HomeNewCardviewBinding>(
             LayoutInflater.from(viewGroup.context),
@@ -38,6 +42,8 @@ class HomeNewAdapter() : RecyclerView.Adapter<HomeNewAdapter.CustomViewHolder>()
         //viewHolder.dashboardEditCardviewBinding.dashboardEdittextEditingKind.text = titles[i]
         //viewHolder.homeCardviewBinding.dashboardEdittextEditingKind.setText(titles[i])
         //viewHolder.notificationsCardviewBinding.itemImage.setImageResource(images[i])
+        //viewHolder.homeNewCardviewBinding.homeCardLocationText.text = locationArray[i]
+
     }
 
     override fun getItemCount(): Int {

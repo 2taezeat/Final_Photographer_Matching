@@ -44,8 +44,8 @@ class MyPageFragment : Fragment() {
 
         binding.profileRegisterButton.setOnClickListener{
             val fragmentManager: FragmentManager = lazyActivity.supportFragmentManager
-            BottomDialogShow.profileEditDialogFragmentShow(fragmentManager)
-            //BottomDialogShow.homeContentDialogFragmentShow(fragmentManager)
+            //BottomDialogShow.profileEditDialogFragmentShow(fragmentManager)
+            BottomDialogShow.homeContentDialogFragmentShow(fragmentManager)
 
         }
 

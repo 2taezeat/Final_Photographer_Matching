@@ -9,12 +9,16 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.final_photographer_matching.R
 import com.example.final_photographer_matching.databinding.ActivityMainBinding
+import java.lang.Thread.sleep
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        setTheme(R.style.NoActionBarTheme)
+
         super.onCreate(savedInstanceState)
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
 
