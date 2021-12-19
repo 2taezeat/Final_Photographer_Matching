@@ -29,10 +29,11 @@
                 >
 
                 <ImageView
-                    android:id="@+id/home_card_imageview"
+                    android:id="@+id/home_card_new_imageview"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@color/teal_700"
+                    android:scaleType = "fitXY"
                     />
 
 
@@ -46,7 +47,7 @@
                 >
 
                 <TextView
-                    android:id="@+id/home_card_nickname_text"
+                    android:id="@+id/home_card_new_nickname_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/dohyeon_regular"
@@ -60,7 +61,7 @@
                 </TextView>
 
                 <TextView
-                    android:id="@+id/home_card_star_text"
+                    android:id="@+id/home_card_new_star_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/dohyeon_regular"
@@ -86,7 +87,7 @@
                 </ImageView>
 
                 <TextView
-                    android:id="@+id/home_card_location_text"
+                    android:id="@+id/home_card_new_location_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/dohyeon_regular"
@@ -103,7 +104,7 @@
 
 
                 <TextView
-                    android:id="@+id/home_card_kind_text"
+                    android:id="@+id/home_card_new_kind_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/dohyeon_regular"
@@ -132,6 +133,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:id="@+id/home_card_new_tag_1"
                         android:text="#단아한"
                         android:textColor="@color/main_color"
                         android:textSize="10sp"
@@ -148,7 +150,7 @@
                     app:contentPadding="2dp"
                     android:backgroundTint="@color/pink"
                     android:foreground="?selectableItemBackground"
-                    android:layout_marginStart="55dp"
+                    android:layout_marginStart="60dp"
                     android:layout_marginTop="58dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -157,6 +159,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="#화사한"
+                        android:id="@+id/home_card_new_tag_2"
                         android:textColor="@color/main_color"
                         android:textSize="10sp"
                         android:fontFamily="@font/dohyeon_regular"
@@ -164,28 +167,28 @@
                     </TextView>
                 </androidx.cardview.widget.CardView>
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:cardCornerRadius="20dp"
-                    app:contentPadding="2dp"
-                    android:backgroundTint="@color/pink"
-                    android:foreground="?selectableItemBackground"
-                    android:layout_marginStart="100dp"
-                    android:layout_marginTop="58dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    >
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="#화사한"
-                        android:textColor="@color/main_color"
-                        android:textSize="10sp"
-                        android:fontFamily="@font/dohyeon_regular"
-                        >
-                    </TextView>
-                </androidx.cardview.widget.CardView>
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:cardCornerRadius="20dp"-->
+<!--                    app:contentPadding="2dp"-->
+<!--                    android:backgroundTint="@color/pink"-->
+<!--                    android:foreground="?selectableItemBackground"-->
+<!--                    android:layout_marginStart="100dp"-->
+<!--                    android:layout_marginTop="58dp"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent"-->
+<!--                    >-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="#화사한"-->
+<!--                        android:textColor="@color/main_color"-->
+<!--                        android:textSize="10sp"-->
+<!--                        android:fontFamily="@font/dohyeon_regular"-->
+<!--                        >-->
+<!--                    </TextView>-->
+<!--                </androidx.cardview.widget.CardView>-->
 
 
 

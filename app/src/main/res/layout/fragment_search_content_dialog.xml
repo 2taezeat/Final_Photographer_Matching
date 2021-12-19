@@ -49,7 +49,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@color/teal_200"
-                    android:src="@drawable/image_2"
+                    android:src="@drawable/image_6"
                     android:scaleType="fitXY"
                     />
 
@@ -187,7 +187,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 android:layout_marginStart="34dp"
                 app:layout_constraintStart_toStartOf="parent"
-                android:text="룸 하이디"
+                android:text="Dear 사진관"
                 android:fontFamily="@font/dohyeon_regular"
                 android:textSize="20sp"
                 android:textColor="@color/black"
@@ -203,7 +203,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 android:layout_marginStart="34dp"
                 app:layout_constraintStart_toStartOf="parent"
-                android:text="경기도 남양주"
+                android:text="서울시 성북구"
                 android:fontFamily="@font/dohyeon_regular"
                 android:textSize="20sp"
                 android:textColor="@color/black"
@@ -234,7 +234,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 android:layout_marginStart="34dp"
                 app:layout_constraintStart_toStartOf="parent"
-                android:text="60,000"
+                android:text="30,000"
                 android:fontFamily="@font/dohyeon_regular"
                 android:textSize="20sp"
                 android:textColor="@color/black"
@@ -249,7 +249,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 android:layout_marginStart="34dp"
                 app:layout_constraintStart_toStartOf="parent"
-                android:text="'@roomhidy'"
+                android:text="'@stainDear'"
                 android:fontFamily="@font/dohyeon_regular"
                 android:textSize="20sp"
                 android:textColor="@color/black"
@@ -272,7 +272,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="#단체사진"
+                    android:text="#베테랑"
                     android:textColor="@color/main_color"
                     android:textSize="20sp"
                     android:id="@+id/home_dialog_hashtag_1_text"
@@ -289,14 +289,14 @@
                 android:backgroundTint="@color/pink"
                 android:foreground="?selectableItemBackground"
                 app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginStart="130dp"
+                android:layout_marginStart="110dp"
                 app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginTop="345dp"
                 >
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="#보정무료"
+                    android:text="#커플"
                     android:textColor="@color/main_color"
                     android:textSize="20sp"
                     android:id="@+id/home_dialog_hashtag_2_text"
@@ -313,7 +313,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 android:layout_marginStart="34dp"
                 app:layout_constraintStart_toStartOf="parent"
-                android:text="14:00 ~ 16:00, 18:00 ~ 20:00"
+                android:text="09:00 ~ 12:00, 13:00 ~ 19:00"
                 android:fontFamily="@font/dohyeon_regular"
                 android:textSize="20sp"
                 android:textColor="@color/black"
@@ -328,7 +328,7 @@
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:text="5.0"
+                android:text="4.5"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:layout_marginEnd="20dp"
@@ -486,7 +486,7 @@
                                 android:fontFamily="@font/dohyeon_regular"
                                 android:textColor="@color/black"
                                 android:textSize="16sp"
-                                android:text="사진사분이 제 요구에 맞게 구도를 잡아주셨고, 매우 친절하셨습니다!!!"
+                                android:text="친절하셔서 자주 이용할 거 같아요!!!"
                                 >
                             </TextView>
 
@@ -495,7 +495,7 @@
                                 android:layout_height="wrap_content"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
-                                android:text="5.0"
+                                android:text="4.5"
                                 android:textColor="@color/black"
                                 android:textSize="14sp"
                                 >
@@ -539,7 +539,7 @@
                             android:layout_height="wrap_content"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
-                            android:text="5.0"
+                            android:text="4.0"
                             android:textColor="@color/black"
                             android:textSize="14sp"
                             >
@@ -575,7 +575,7 @@
                             android:fontFamily="@font/dohyeon_regular"
                             android:textColor="@color/black"
                             android:textSize="16sp"
-                            android:text="친절하셔서 자주 이용할 거 같아요!!!"
+                            android:text="사진사분이 제 요구에 맞게 구도를 잡아주셨고, 매우 친절하셨습니다!!!"
                             >
                         </TextView>
 
@@ -640,7 +640,7 @@
                 android:layout_height="50dp"
                 android:text="@string/chatting"
                 android:textSize="20sp"
-                android:id="@+id/home_content_chatting_button"
+                android:id="@+id/search_content_chatting_button"
                 android:fontFamily="@font/nanumgothic_bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

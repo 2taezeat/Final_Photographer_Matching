@@ -24,13 +24,14 @@
         <entry key="app/src/main/res/layout/fragment_mypage.xml" value="0.375" />
         <entry key="app/src/main/res/layout/fragment_notification.xml" value="0.125" />
         <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.1598731884057971" />
-        <entry key="app/src/main/res/layout/fragment_profile_edit_dialog.xml" value="0.3607924921793535" />
+        <entry key="app/src/main/res/layout/fragment_profile_edit_dialog.xml" value="0.375" />
         <entry key="app/src/main/res/layout/fragment_refrigerator_bottom_dialog.xml" value="0.23771929824561402" />
         <entry key="app/src/main/res/layout/fragment_search.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/fragment_search_content_dialog.xml" value="0.22587719298245615" />
         <entry key="app/src/main/res/layout/home_cardview.xml" value="0.45" />
         <entry key="app/src/main/res/layout/home_kind_cardview.xml" value="0.45" />
         <entry key="app/src/main/res/layout/home_new_cardview.xml" value="0.47181008902077154" />
-        <entry key="app/src/main/res/layout/home_recommend_cardview.xml" value="0.30350877192982456" />
+        <entry key="app/src/main/res/layout/home_recommend_cardview.xml" value="0.55" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.2015625" />
         <entry key="app/src/main/res/menu/home_toolbar_menu.xml" value="0.225" />
         <entry key="app/src/main/res/menu/mypage_toolbar_menu.xml" value="0.23903508771929824" />

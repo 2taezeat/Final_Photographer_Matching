@@ -1,5 +1,6 @@
 package com.example.final_photographer_matching.view.fragment
 
+import android.app.Activity
 import android.content.Context
 import android.os.Bundle
 import android.util.Log
@@ -12,9 +13,12 @@ import android.webkit.WebViewClient
 import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentActivity
+import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.final_photographer_matching.databinding.FragmentSearchBinding
+import com.example.final_photographer_matching.utils.BottomDialogShow
 import com.example.final_photographer_matching.viewmodels.SearchViewModel
 
 class SearchFragment : Fragment() {
@@ -51,23 +55,8 @@ class SearchFragment : Fragment() {
             settings.cacheMode = WebSettings.LOAD_DEFAULT
         }
 
-        //binding.searchWebView.addJavascriptInterface(WebAppInterface(lazyActivity), "BlackJin")
-        binding.searchWebView.addJavascriptInterface(JSBridge(),"JSBridge")
-
+        binding.searchWebView.addJavascriptInterface(JSBridge(lazyActivity),"JSBridge")
         binding.searchWebView.loadUrl(searchURL)
-
-//        binding.searchWebView.addJavascriptInterface(new Object() {
-//            @JavascriptInterface
-//            fun justDoIt(keyword : String) {
-//                Toast.makeText(lazyActivity, "Keyword is " + keyword, Toast.LENGTH_LONG).show();
-//            }
-//        }, "Zeany");
-//
-//        binding.webviewCl.setOnClickListener {
-//            Log.d("qwe","qwe")
-//        }
-
-
 
         return root
     }
@@ -78,19 +67,18 @@ class SearchFragment : Fragment() {
     }
 }
 
-class WebAppInterface(private val mContext: Context) {
 
-    /** Show a toast from the web page  */
-    @JavascriptInterface
-    fun showToast(toast: String) {
-        Toast.makeText(mContext, toast, Toast.LENGTH_SHORT).show()
-    }
-}
 
-class JSBridge(){
+class JSBridge(lazyActivity: FragmentActivity){
+    var lazyActivity: FragmentActivity = lazyActivity
+
+
     @JavascriptInterface
     fun showMessageInNative(message:String){
         //Received message from webview in native, process data
         Log.d("jsjsjs","${message}")
+
+        val fragmentManager: FragmentManager = lazyActivity.supportFragmentManager
+        BottomDialogShow.searchContentDialogFragmentShow(fragmentManager)
     }
 }

@@ -30,7 +30,7 @@ class HomeFragment : Fragment() {
         requireActivity()
     }
 
-    val tmp = HomeKindAdapter()
+    val homeRecommendAdapter = HomeRecommendAdapter()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -70,7 +70,7 @@ class HomeFragment : Fragment() {
         val homeKindRecyclerView = binding.homeRv3
         val homeNewRecyclerView = binding.homeRv4
 
-        tmp.setItemClickListener(object: HomeKindAdapter.OnItemClickListener{
+        homeRecommendAdapter.setItemClickListener(object: HomeRecommendAdapter.OnItemClickListener{
             override fun onClick(v: View, position: Int) {
                 val fragmentManager: FragmentManager = lazyActivity.supportFragmentManager
                 BottomDialogShow.homeContentDialogFragmentShow(fragmentManager)
@@ -84,7 +84,7 @@ class HomeFragment : Fragment() {
                     return false
                 }
             }
-            it.adapter = HomeRecommendAdapter()
+            it.adapter = homeRecommendAdapter
         }
 
         homeKindRecyclerView.also {
@@ -93,7 +93,7 @@ class HomeFragment : Fragment() {
                     return false
                 }
             }
-            it.adapter = tmp
+            it.adapter = HomeKindAdapter()
 
 
         }

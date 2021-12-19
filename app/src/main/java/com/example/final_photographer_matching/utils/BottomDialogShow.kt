@@ -3,6 +3,7 @@ package com.example.final_photographer_matching.utils
 import androidx.fragment.app.FragmentManager
 import com.example.final_photographer_matching.view.fragment.HomeContentDialogFragment
 import com.example.final_photographer_matching.view.fragment.ProfileEditDialogFragment
+import com.example.final_photographer_matching.view.fragment.SearchContentDialogFragment
 
 
 class BottomDialogShow{
@@ -17,6 +18,10 @@ class BottomDialogShow{
             homeContentDialogFragment.show(fragmentManager, homeContentDialogFragment.tag)
         }
 
+        private val searchContentDialogFragment = SearchContentDialogFragment()
+        fun searchContentDialogFragmentShow(fragmentManager: FragmentManager) {
+            searchContentDialogFragment.show(fragmentManager, searchContentDialogFragment.tag)
+        }
 
     }
 }
